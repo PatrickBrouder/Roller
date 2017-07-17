@@ -794,8 +794,8 @@ body {
 
 .container .gallery a img {
 float: left;
-width: 20%;
-height: auto;
+
+
 border: 2px solid #fff;
 -webkit-transition: -webkit-transform .15s ease;
 -moz-transition: -moz-transform .15s ease;

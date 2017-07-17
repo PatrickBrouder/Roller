@@ -89,12 +89,79 @@
     <!-- Header -->
 
     
-    <section id="prices" class="bg-light-gray">
+    <section class="bg-light-gray">
         <div class='container'>
  <div class="gallery">
  <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Gallery</h2>
+                </div>
+            </div>
+     <div class="row text-center">
+                
+  <?php 
+  // Image extensions
+  $image_extensions = array("png","jpg","jpeg","gif");
+
+  // Target directory
+  $dir = 'img/gallery/Main_Gallery/';
+  if (is_dir($dir)){
+ 
+   if ($dh = opendir($dir)){
+    $count = 1;
+
+    // Read files
+    while (($file = readdir($dh)) !== false){
+
+     if($file != '' && $file != '.' && $file != '..'){
+ 
+      
+
+      // Image path
+      $image_path = "img/gallery/Main_Gallery/".$file;
+      $image_t_path = "img/gallery/Main_Gallery_thumb/".$file;
+ 
+      
+      $image_ext = pathinfo($image_path, PATHINFO_EXTENSION);
+
+      // Check its not folder and it is image file
+      if(!is_dir($image_path) &&  
+         in_array($image_ext,$image_extensions)){
+   ?>
+
+       <!-- Image -->
+         <div class="col-md-2 col-xs-4">
+       <a href="<?php echo $image_path; ?>" data-lightbox="rollerjam">
+        <img src="<?php echo $image_t_path; ?>" alt="" title="" class="img-responsive"/>
+       </a>
+         </div>
+       <!-- --- -->
+       <?php
+
+       // Break
+       if( $count%6 == 0){
+       ?>
+     </div>
+     <div class="row text-center">
+       <?php 
+       }
+       $count++;
+      }
+     }
+ 
+    }
+    closedir($dh);
+   }
+  }
+     
+ ?>
+     </div>
+     
+     
+     
+     <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">80s Night</h2>
                 </div>
             </div>
      <div class="row text-center">
@@ -118,8 +185,8 @@
       
 
       // Image path
-      $image_path = "img/gallery/category/".$file;
- 
+      $image_path = "img/gallery/80s_night/".$file;
+      $image_t_path = "img/gallery/80s_night_thumb/".$file;
       
       $image_ext = pathinfo($image_path, PATHINFO_EXTENSION);
 
@@ -129,16 +196,16 @@
    ?>
 
        <!-- Image -->
-         <div class="col-sm-3">
+         <div class="col-md-2 col-xs-4">
        <a href="<?php echo $image_path; ?>" data-lightbox="rollerjam">
-        <img src="<?php echo $image_path; ?>" alt="" title=""/>
+        <img src="<?php echo $image_t_path; ?>" alt="" title="" class="img-responsive"/>
        </a>
          </div>
        <!-- --- -->
        <?php
 
        // Break
-       if( $count%4 == 0){
+       if( $count%6 == 0){
        ?>
      </div>
      <div class="row text-center">
@@ -152,8 +219,279 @@
     closedir($dh);
    }
   }
+     
  ?>
      </div>
+     
+     
+     <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Christmas</h2>
+                </div>
+            </div>
+     <div class="row text-center">
+                
+  <?php 
+  // Image extensions
+  $image_extensions = array("png","jpg","jpeg","gif");
+
+  // Target directory
+  $dir = 'img/gallery/Christmas/';
+  if (is_dir($dir)){
+ 
+   if ($dh = opendir($dir)){
+    $count = 1;
+
+    // Read files
+    while (($file = readdir($dh)) !== false){
+
+     if($file != '' && $file != '.' && $file != '..'){
+ 
+      
+
+      // Image path
+      $image_path = "img/gallery/Christmas/".$file;
+      $image_t_path = "img/gallery/Christmas_thumb/".$file;
+ 
+      
+      $image_ext = pathinfo($image_path, PATHINFO_EXTENSION);
+
+      // Check its not folder and it is image file
+      if(!is_dir($image_path) &&  
+         in_array($image_ext,$image_extensions)){
+   ?>
+
+       <!-- Image -->
+         <div class="col-md-2 col-xs-4">
+       <a href="<?php echo $image_path; ?>" data-lightbox="rollerjam">
+        <img src="<?php echo $image_t_path; ?>" alt="" title="" class="img-responsive"/>
+       </a>
+         </div>
+       <!-- --- -->
+       <?php
+
+       // Break
+       if( $count%6 == 0){
+       ?>
+     </div>
+     <div class="row text-center">
+       <?php 
+       }
+       $count++;
+      }
+     }
+ 
+    }
+    closedir($dh);
+   }
+  }
+     
+ ?>
+     </div>
+     
+     
+     
+     <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Hen Party</h2>
+                </div>
+            </div>
+     <div class="row text-center">
+                
+  <?php 
+  // Image extensions
+  $image_extensions = array("png","jpg","jpeg","gif");
+
+  // Target directory
+  $dir = 'img/gallery/Hen_party/';
+  if (is_dir($dir)){
+ 
+   if ($dh = opendir($dir)){
+    $count = 1;
+
+    // Read files
+    while (($file = readdir($dh)) !== false){
+
+     if($file != '' && $file != '.' && $file != '..'){
+ 
+      
+
+      // Image path
+      $image_path = "img/gallery/Hen_party/".$file;
+      $image_t_path = "img/gallery/Hen_party_thumb/".$file;
+ 
+      
+      $image_ext = pathinfo($image_path, PATHINFO_EXTENSION);
+
+      // Check its not folder and it is image file
+      if(!is_dir($image_path) &&  
+         in_array($image_ext,$image_extensions)){
+   ?>
+
+       <!-- Image -->
+         <div class="col-md-2 col-xs-4">
+       <a href="<?php echo $image_path; ?>" data-lightbox="rollerjam">
+        <img src="<?php echo $image_t_path; ?>" alt="" title="" class="img-responsive"/>
+       </a>
+         </div>
+       <!-- --- -->
+       <?php
+
+       // Break
+       if( $count%6 == 0){
+       ?>
+     </div>
+     <div class="row text-center">
+       <?php 
+       }
+       $count++;
+      }
+     }
+ 
+    }
+    closedir($dh);
+   }
+  }
+     
+ ?>
+     </div>
+     
+     
+     
+     <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Launch Night</h2>
+                </div>
+            </div>
+     <div class="row text-center">
+                
+  <?php 
+  // Image extensions
+  $image_extensions = array("png","jpg","jpeg","gif");
+
+  // Target directory
+  $dir = 'img/gallery/Launch_Night/';
+  if (is_dir($dir)){
+ 
+   if ($dh = opendir($dir)){
+    $count = 1;
+
+    // Read files
+    while (($file = readdir($dh)) !== false){
+
+     if($file != '' && $file != '.' && $file != '..'){
+ 
+      
+
+      // Image path
+      $image_path = "img/gallery/Launch_Night/".$file;
+      $image_t_path = "img/gallery/Launch_Night_thumb/".$file;
+ 
+      
+      $image_ext = pathinfo($image_path, PATHINFO_EXTENSION);
+
+      // Check its not folder and it is image file
+      if(!is_dir($image_path) &&  
+         in_array($image_ext,$image_extensions)){
+   ?>
+
+       <!-- Image -->
+         <div class="col-md-2 col-xs-4">
+       <a href="<?php echo $image_path; ?>" data-lightbox="rollerjam">
+        <img src="<?php echo $image_t_path; ?>" alt="" title="" class="img-responsive"/>
+       </a>
+         </div>
+       <!-- --- -->
+       <?php
+
+       // Break
+       if( $count%6 == 0){
+       ?>
+     </div>
+     <div class="row text-center">
+       <?php 
+       }
+       $count++;
+      }
+     }
+ 
+    }
+    closedir($dh);
+   }
+  }
+     
+ ?>
+     </div>
+     
+     
+     
+     <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Christmas</h2>
+                </div>
+            </div>
+     <div class="row text-center">
+                
+  <?php 
+  // Image extensions
+  $image_extensions = array("png","jpg","jpeg","gif");
+
+  // Target directory
+  $dir = 'img/gallery/Skate_fit_classes/';
+  if (is_dir($dir)){
+ 
+   if ($dh = opendir($dir)){
+    $count = 1;
+
+    // Read files
+    while (($file = readdir($dh)) !== false){
+
+     if($file != '' && $file != '.' && $file != '..'){
+ 
+      
+
+      // Image path
+      $image_path = "img/gallery/Skate_fit_classes/".$file;
+      $image_t_path = "img/gallery/Skate_fit_classes_thumb/".$file;
+ 
+      
+      $image_ext = pathinfo($image_path, PATHINFO_EXTENSION);
+
+      // Check its not folder and it is image file
+      if(!is_dir($image_path) &&  
+         in_array($image_ext,$image_extensions)){
+   ?>
+
+       <!-- Image -->
+         <div class="col-md-2 col-xs-4">
+       <a href="<?php echo $image_path; ?>" data-lightbox="rollerjam">
+        <img src="<?php echo $image_t_path; ?>" alt="" title="" class="img-responsive"/>
+       </a>
+         </div>
+       <!-- --- -->
+       <?php
+
+       // Break
+       if( $count%6 == 0){
+       ?>
+     </div>
+     <div class="row text-center">
+       <?php 
+       }
+       $count++;
+      }
+     }
+ 
+    }
+    closedir($dh);
+   }
+  }
+     
+ ?>
+     </div>
+     
+     
+     
  </div>
 </div>
     </section>
