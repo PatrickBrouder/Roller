@@ -92,13 +92,19 @@
     <section id="prices" class="bg-light-gray">
         <div class='container'>
  <div class="gallery">
- 
+ <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Gallery</h2>
+                </div>
+            </div>
+     <div class="row text-center">
+                
   <?php 
   // Image extensions
   $image_extensions = array("png","jpg","jpeg","gif");
 
   // Target directory
-  $dir = 'img/gallery/category/';
+  $dir = 'img/gallery/80s_night/';
   if (is_dir($dir)){
  
    if ($dh = opendir($dir)){
@@ -123,16 +129,19 @@
    ?>
 
        <!-- Image -->
+         <div class="col-sm-3">
        <a href="<?php echo $image_path; ?>" data-lightbox="rollerjam">
         <img src="<?php echo $image_path; ?>" alt="" title=""/>
        </a>
+         </div>
        <!-- --- -->
        <?php
 
        // Break
-       if( $count%5 == 0){
+       if( $count%4 == 0){
        ?>
-        <div class="clear"></div>
+     </div>
+     <div class="row text-center">
        <?php 
        }
        $count++;
@@ -144,6 +153,7 @@
    }
   }
  ?>
+     </div>
  </div>
 </div>
     </section>
