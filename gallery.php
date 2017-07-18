@@ -49,7 +49,7 @@
                 </button>
                 
                 
-                <a id="rollerLogo" href="indexR.html" class="navbar-brand page-scroll"><img style="max-width:220px" src="img/logo.png"></a>
+                <a id="rollerLogo" href="limerick.html" class="navbar-brand page-scroll"><img style="max-width:220px" src="img/logo.png"></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -59,25 +59,25 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="indexR.html#prices">Prices & Times</a>
+                        <a class="page-scroll" href="limerick.html#prices">Prices & Times</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="indexR.html#kidsparties">Kids Parties</a>
+                        <a class="page-scroll" href="limerick.html#kidsparties">Kids Parties</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="indexR.html#henparties">Hen Parties</a>
+                        <a class="page-scroll" href="limerick.html#henparties">Hen Parties</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="indexR.html#events">Events</a>
+                        <a class="page-scroll" href="limerick.html#events">Events</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="gallery.php">Gallery</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="indexR.html#about">About</a>
+                        <a class="page-scroll" href="limerick.html#about">About</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="indexR.html#contact">Contact</a>
+                        <a class="page-scroll" href="limerick.html#contact">Contact</a>
                     </li>
                 </ul>
             </div>
